@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flutter Ecosystem Clone</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background: #02569B;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #02569B, #03A9F4);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    /* Sections */
+    .section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #02569B;
+    }
+
+    .icon-box {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 25px;
+      border-radius: 12px;
+      background: #f8f9fa;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 260px;
+      margin: 15px;
+      transition: 0.3s;
+    }
+
+    .icon-box:hover {
+      transform: translateY(-6px);
+    }
+
+    .icon-box svg {
+      margin-bottom: 15px;
+    }
+
+    .icon-box a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #02569B;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .icon-box a:hover {
+      background: #013a6b;
+    }
+
+    /* Footer */
+    footer {
+      background: #02569B;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Flutter Ecosystem</h1>
+    <nav>
+      <a href="#events">Events</a>
+      <a href="#packages">Packages</a>
+      <a href="#community">Community</a>
+      <a href="#consultants">Consultants</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Build beautiful apps with Flutter</h2>
+    <p>Explore the ecosystem of tools, libraries, and community.</p>
+  </section>
+
+  <!-- Events -->
+  <section id="events" class="section">
+    <h2>📅 Events</h2>
+    <p>Learn about the latest Flutter developments at our global events.</p>
+    <div class="icon-box">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#02569B" viewBox="0 0 24 24">
+        <path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 
+        0-2 .9-2 2v14c0 1.1.89 2 2 
+        2h14c1.1 0 2-.9 
+        2-2V6c0-1.1-.9-2-2-2zm0 
+        16H5V9h14v11z"/>
+      </svg>
+      <p>Everyone is invited</p>
+      <a href="#">See events</a>
+    </div>
+  </section>
+
+  <!-- Packages -->
+  <section id="packages" class="section">
+    <h2>📦 Packages</h2>
+    <p>Browse over 20,000 packages, plugins, and integrations on pub.dev.</p>
+    <div class="icon-box">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#02569B" viewBox="0 0 24 24">
+        <path d="M21 16V8a2 2 0 0 
+        0-1-1.73l-7-4a2 2 0 0 
+        0-2 0l-7 4A2 2 0 0 0 
+        3 8v8a2 2 0 0 0 1 
+        1.73l7 4a2 2 0 0 0 2 
+        0l7-4a2 2 0 0 0 1-1.73zM12 
+        3.19 18.47 7 12 10.81 5.53 
+        7 12 3.19zM5 8.74l6 3.47v6.92l-6-3.47V8.74zm8 
+        10.39v-6.92l6-3.47v6.92l-6 3.47z"/>
+      </svg>
+      <p>Find what you need on pub.dev</p>
+      <a href="#">Explore packages</a>
+    </div>
+  </section>
+
+  <!-- Community -->
+  <section id="community" class="section">
+    <h2>👥 Community</h2>
+    <p>Connect with Flutter developers around the world.</p>
+    <div class="icon-box">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#02569B" viewBox="0 0 24 24">
+        <path d="M16 11c1.66 0 2.99-1.34 
+        2.99-3S17.66 5 16 5c-1.66 0-3 
+        1.34-3 3s1.34 3 3 3zm-8 
+        0c1.66 0 2.99-1.34 
+        2.99-3S9.66 5 8 5c-1.66 0-3 
+        1.34-3 3s1.34 3 3 3zm0 
+        2c-2.33 0-7 1.17-7 
+        3.5V19h14v-2.5C15 
+        14.17 10.33 13 8 13zm8 
+        0c-.29 0-.62.02-.97.05 
+        1.16.84 1.97 1.97 
+        1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+      </svg>
+      <p>Join our forums and groups</p>
+      <a href="#">Join community</a>
+    </div>
+  </section>
+
+  <!-- Consultants -->
+  <section id="consultants" class="section">
+    <h2>💼 Consultants</h2>
+    <p>Hire Flutter experts for your business needs.</p>
+    <div class="icon-box">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="#02569B" viewBox="0 0 24 24">
+        <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 
+        2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 
+        1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+      </svg>
+      <p>Find verified Flutter consultants</p>
+      <a href="#">Hire now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Flutter Ecosystem Clone | Built with ❤️</p>
+  </footer>
+
+</body>
+</html>
